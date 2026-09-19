@@ -1,0 +1,40 @@
+site_name: 这是哪里
+nav:
+  - 首页: index.md
+  - Python:
+    - python/index.md
+  - 电子信息工程:
+    - eie/index.md
+  - 博客:
+    - blogs/index.md
+  - 关于:
+    - about/updatelog.md
+theme:
+  name: material
+  language: zh
+  palette:  #调色板
+    #深色模式
+    - scheme: slate  #配色方案
+      primary: blue grey  #原色
+      accent: indigo  #点缀色
+      toggle:  #切换
+        icon: material/brightness-5
+        name: 切换至白昼
+    # 浅色模式
+    - scheme: default
+      primary: light blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换至永夜
+  favicon: img/favicon.ico
+  logo: img/sherii.webp
+  features:
+    - navigation.tabs  #顶部标签导航
+    - navigation.top  #返回顶部按钮
+    - search.suggest  #搜索建议
+    - search.highlight  #搜索高亮
+plugins:
+  - search
+  - offline
+copyright: 本网站基于 Material for MkDocs 进行部署
