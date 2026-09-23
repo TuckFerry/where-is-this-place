@@ -5,8 +5,9 @@ nav:
     - python/index.md
   - 电子信息工程:
     - eie/index.md
-  - 博客:
-    - blogs/index.md
+  - 音游:
+    - rhythmgame/home.md
+    - rhythmgame/achievements.md
   - 关于:
     - about/updatelog.md
 theme:
