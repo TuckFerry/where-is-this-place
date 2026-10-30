@@ -1,15 +1,4 @@
 site_name: 这是哪里
-nav:
-  - 首页: index.md
-  - Python:
-    - python/index.md
-  - 电子信息工程:
-    - eie/index.md
-  - 音游:
-    - rhythmgame/home.md
-    - rhythmgame/achievements.md
-  - 关于:
-    - about/updatelog.md
 theme:
   name: material
   language: zh
@@ -31,11 +20,42 @@ theme:
   favicon: img/favicon.ico
   logo: img/sherii.webp
   features:
+    - navigation.indexes  #目录索引页（大标题可点击）
     - navigation.tabs  #顶部标签导航
     - navigation.top  #返回顶部按钮
+    - navigation.expand  #导航栏展开
     - search.suggest  #搜索建议
     - search.highlight  #搜索高亮
 plugins:
   - search
   - offline
+  - blog: #音游
+      blog_dir: rhythmgame
+      blog_toc: true
+      post_date_format: medium
+      post_url_date_format: yyyy/MM
+      post_excerpt_max_authors: 0
+      post_excerpt_max_categories: 7
+      post_readtime: false
+      archive_name: 档案
+      categories_name: 分类
+      categories_allowed:
+        - Phigros
+        - Arcaea
+        - Rotaeno
+        - Maimai
+        - Chunithm
+        - In Falsus
+        - Others
+      authors: false
 copyright: 充满回忆
+nav:
+  - 首页: index.md
+  - Python:
+    - python/index.md
+  - 电子信息工程:
+    - eie/index.md
+  - 音游:
+    - rhythmgame/index.md
+  - 关于:
+    - about/updatelog.md
